@@ -1,38 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.balance {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.11px;
+}
+
+.income-expenses {
+  display: flex;
+  background-color:#d9d9d9;
+  /* border-radius: 15px; */
+  width: 210px;
+  padding: 0 51px;
+  justify-content: space-between;
+}
+
+.income > h3 {
+  /* margin-right: 15px; */
+  color: rgb(0, 24, 243);
+  font-weight: 500;
+}
+
+.expenses > h3 {
+  color: red;
+    font-weight: 500;
+}
+
+.income>h2,
+.expenses>h2 {
+  font-weight: 500;
+}
+
+
 .App {
+  /* background-color: rgb(212, 239, 138); */
+  /* width: 412px; */
+  width: inherit;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  width: inherit;
+  height: 39px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  border: none;
+  border-radius: 5px;
+  margin-top: 9px;
+  height: 30px;
+  width: 70px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+
+.label{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+label,
+input{
+  margin-bottom: 4px;
+}
+
+.header{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.del{
+  height: 39px;
+    margin-left: 3px;
+    border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.transaction-list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: -webkit-fill-available;
 }
